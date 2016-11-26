@@ -1,4 +1,4 @@
-require 'yaml'
+require "yaml"
 
 require 'sinatra'
 require 'sinatra/reloader'
@@ -17,11 +17,11 @@ helpers do
 end
 
 get "/" do
-  redirect "/home"
+  redirect "/users"
 end
 
-get "/home" do
-  erb :user
+get "/users" do
+  erb :users
 end
 
 get "/:user_name" do
